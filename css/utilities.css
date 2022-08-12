@@ -2,3 +2,16 @@
 .text-primary {
   color: #28a745;
 }
+
+.btn {
+  color: white;
+  background-color: #28a745;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
