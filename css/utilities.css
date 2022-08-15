@@ -15,3 +15,8 @@
 .btn:hover {
   opacity: 0.9;
 }
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+}
