@@ -87,3 +87,36 @@ a {
   font-weight: 300;
   padding-bottom: 25px;
 }
+
+/* about */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.flex-item {
+  text-align: center;
+  padding: 70px;
+  width: 33.33%;
+}
+
+.icon {
+  color: #28a745;
+}
+
+#about h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+#about p {
+  font-weight: 200;
+  font-size: 0.85rem;
+  text-align: justify;
+  text-align-last: center;
+  padding: 10px;
+  line-height: 1.8;
+}
