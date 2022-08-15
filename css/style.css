@@ -89,15 +89,15 @@ a {
 }
 
 /* about */
-.flex-container {
+#about .flex-container {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-.flex-item {
+#about .flex-container .flex-item {
   text-align: center;
-  padding: 70px;
+  padding: 90px;
   width: 33.33%;
 }
 
@@ -119,4 +119,62 @@ a {
   text-align-last: center;
   padding: 10px;
   line-height: 1.8;
+}
+
+/* solutions */
+#solutions .flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#solutions .flex-container .flex-item-1,
+#solutions .flex-container .flex-item-2 {
+  width: 50%;
+}
+
+#solutions .flex-item-1 {
+  background-color: #000000;
+  background-blend-mode: darken;
+}
+
+#solutions .flex-item-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#solutions .flex-item-2 {
+  background-color: #28a745;
+  color: white;
+  padding: 90px 100px;
+}
+
+#solutions .flex-item-2 > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#solutions h4 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#solutions h2 {
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+#solutions p {
+  font-weight: 200;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+#solutions .btn:hover {
+  background-color: #d1dad34b;
 }
