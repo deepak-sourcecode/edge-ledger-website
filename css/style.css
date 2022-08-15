@@ -102,23 +102,24 @@ a {
 }
 
 .icon {
-  color: #28a745;
+  color: white;
+  background-color: #28a745;
+  border-radius: 50%;
+  padding: 25px;
 }
 
 #about h3 {
   font-weight: 600;
   font-size: 1.3rem;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 5px;
 }
 
 #about p {
   font-weight: 200;
-  font-size: 0.85rem;
-  text-align: justify;
-  text-align-last: center;
+  font-size: 0.8rem;
   padding: 10px;
-  line-height: 1.8;
+  line-height: 2;
 }
 
 /* solutions */
