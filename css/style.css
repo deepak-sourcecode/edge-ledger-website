@@ -82,7 +82,7 @@ a {
   padding-bottom: 10px;
 }
 
-#showcase .showcase-content p {
+#showcase .showcase-content .description {
   font-size: 1.2rem;
   font-weight: 300;
   padding-bottom: 25px;
@@ -108,18 +108,13 @@ a {
   padding: 25px;
 }
 
-#about h3 {
-  font-weight: 600;
-  font-size: 1.3rem;
+#about .heading-3 {
   padding-top: 30px;
   padding-bottom: 5px;
 }
 
-#about p {
-  font-weight: 200;
-  font-size: 0.8rem;
+#about .description {
   padding: 10px;
-  line-height: 2;
 }
 
 /* solutions */
@@ -153,26 +148,12 @@ a {
   justify-content: center;
 }
 
-#solutions h4 {
-  font-weight: 400;
-  font-size: 2rem;
-}
-
-#solutions h2 {
-  font-weight: 100;
-  font-size: 1.5rem;
+#solutions .sub-heading-2 {
   margin-bottom: 30px;
 }
 
-#solutions p {
-  font-weight: 200;
-  font-size: 0.95rem;
-  line-height: 1.5;
+#solutions .description {
   margin-bottom: 40px;
-}
-
-#solutions .btn:hover {
-  background-color: #d1dad34b;
 }
 
 /* cases */
@@ -185,21 +166,11 @@ a {
   padding: 90px 70px 50px 70px;
 }
 
-#cases .section-header h4 {
-  font-weight: 400;
-  font-size: 2rem;
-}
-
-#cases .section-header h2 {
-  font-weight: 100;
-  font-size: 1.5rem;
+#cases .section-header .sub-heading-2 {
   margin-bottom: 30px;
 }
 
-#cases .section-header p {
-  font-weight: 100;
-  font-size: 1.1rem;
-  line-height: 1.5;
+#cases .section-header .description {
   width: 60%;
 }
 
@@ -259,29 +230,37 @@ a {
   justify-content: center;
 }
 
-#blog h4 {
-  font-weight: 400;
-  font-size: 2rem;
-}
-
-#blog h2 {
-  font-weight: 100;
-  font-size: 1.5rem;
+#blog .sub-heading-2 {
   margin-bottom: 30px;
 }
 
-#blog p {
-  font-weight: 200;
-  font-size: 0.95rem;
-  line-height: 1.5;
+#blog .description {
   margin-bottom: 40px;
 }
 
-#blog .btn:hover {
-  background-color: #d1dad34b;
+/* team */
+#team .section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* team */
+#team .section-header .heading-2 {
+  padding-top: 80px;
+}
+
+#team .section-header .sub-heading-2 {
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+#team .section-header .description {
+  margin-bottom: 10px;
+  width: 50%;
+}
+
 #team .flex-container {
   display: flex;
   flex-direction: row;
@@ -295,17 +274,12 @@ a {
   width: 33.33%;
 }
 
-#team .flex-container .flex-item h4 {
-  font-size: 1.15rem;
+#team .flex-container .flex-item .heading-3 {
   padding-bottom: 10px;
 }
 
-#team .flex-container .flex-item p {
-  font-weight: 200;
-  font-size: 0.8rem;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  padding: 0 30px;
+#team .flex-container .flex-item .description {
+  padding-bottom: 100px;
 }
 
 #team img {
@@ -313,33 +287,4 @@ a {
   border-radius: 50%;
   margin-top: 60px;
   margin-bottom: 20px;
-}
-
-#team .section-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#team .section-header h4 {
-  font-weight: 100;
-  font-size: 1.5rem;
-  padding-bottom: 30px;
-}
-
-#team .section-header h2 {
-  font-weight: 400;
-  font-size: 2.5rem;
-  padding-top: 80px;
-  padding-bottom: 10px;
-}
-
-#team .section-header p {
-  font-weight: 200;
-  font-size: 0.9rem;
-  line-height: 2;
-  margin-bottom: 10px;
-  width: 50%;
 }
