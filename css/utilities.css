@@ -4,6 +4,12 @@
   border: none;
   border-radius: 5px;
   font-weight: 300;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -54,4 +60,12 @@
 /* heading styles */
 .heading-thin {
   font-weight: 100;
+}
+
+/* form */
+input {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  color: grey;
+  font-size: 1rem;
 }
