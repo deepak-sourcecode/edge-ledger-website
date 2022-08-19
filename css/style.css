@@ -117,6 +117,10 @@ input {
 }
 
 /* solutions */
+#solutions .flex-row {
+  height: 65vh;
+}
+
 #solutions .col-1 img {
   object-position: left center;
 }
@@ -168,6 +172,10 @@ input {
 }
 
 /* blog */
+#blog .flex-row {
+  height: 65vh;
+}
+
 #blog .flex-container {
   flex-direction: row-reverse;
 }
@@ -222,7 +230,7 @@ input {
 
 /* callback */
 #callback .flex-row {
-  height: 70vh;
+  height: 65vh;
 }
 
 #callback .flex-container .col-2 {
