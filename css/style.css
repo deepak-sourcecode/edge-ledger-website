@@ -98,6 +98,7 @@ input {
 /* about */
 #about .flex-container .flex-item {
   text-align: center;
+  padding: 0 60px;
 }
 
 .icon {
@@ -149,6 +150,7 @@ input {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 70px;
 }
 
 #cases .section-header .sub-heading-2 {
@@ -200,6 +202,10 @@ input {
 }
 
 /* team */
+#team header {
+  padding-bottom: 90px;
+}
+
 #team header .flex-container {
   align-items: center;
   justify-content: center;
@@ -282,11 +288,16 @@ input {
 footer {
   background-color: #2c2c2c;
   color: white;
+  padding: 70px 0;
 }
 
 footer .flex-container {
   align-items: center;
   justify-content: center;
+}
+
+footer .flex-container .description {
+  padding-top: 5px;
 }
 
 footer a i {
