@@ -21,13 +21,13 @@
   <body>
     <!-- navbar -->
     <header>
-      <nav id="navbar">
-        <h1 class="logo">
+      <nav id="navbar" class="flex-container flex-row">
+        <h1 class="flex-item logo">
           <span class="text-primary"
             ><i class="fa-solid fa-book-open"></i> Edge</span
           >Ledger
         </h1>
-        <ul>
+        <ul class="flex-item flex-row">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Cases</a></li>
@@ -125,7 +125,7 @@
         </p>
       </header>
       <div class="flex-grid flex-column">
-        <div class="row-1 flex-item flex-row">
+        <div class="row-1 flex-row flex-item">
           <div class="col-1 flex-item">
             <img class="full-cover" src="./img/case-1.jpg" />
           </div>
@@ -194,30 +194,32 @@
           </p>
         </div>
       </header>
-      <div id="team-members" class="flex-container flex-column">
-        <div class="flex-item flex-row row-1">
-          <div class="flex-item col-1 flex-column">
+      <div id="team-members" class="flex-container flex-row">
+        <div class="team-member flex-item flex-column">
+          <div class="flex-item">
             <img src="./img/team-member-1.jpg" alt="" />
           </div>
-          <div class="flex-item col-2 flex-column">
-            <img src="./img/team-member-2.jpg" alt="" />
-          </div>
-          <div class="flex-item col-3 flex-column">
-            <img src="./img/team-member-3.jpg" alt="" />
-          </div>
-        </div>
-        <div class="flex-item flex-row row-2">
-          <div class="flex-item col-1 flex-column">
+          <div class="flex-item">
             <h4 class="heading-3">Carter Johnson</h4>
             <p class="description">Chief Financial Officer</p>
           </div>
-          <div class="flex-item col-2 flex-column">
+        </div>
+        <div class="team-member flex-item flex-column">
+          <div class="flex-item">
+            <img src="./img/team-member-2.jpg" alt="" />
+          </div>
+          <div class="flex-item">
             <h4 class="heading-3">Mikayla Borris</h4>
             <p class="description">
               Chairman of the Board and Chief Executive Officer
             </p>
           </div>
-          <div class="flex-item col-3 flex-column">
+        </div>
+        <div class="team-member flex-item flex-column">
+          <div class="flex-item">
+            <img src="./img/team-member-3.jpg" alt="" />
+          </div>
+          <div class="flex-item">
             <h4 class="heading-3">Ryou Cheng Kiyosaki</h4>
             <p class="description">
               President and COO Corporate & Investment Banking
