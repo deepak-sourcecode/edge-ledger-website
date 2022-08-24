@@ -1,12 +1,22 @@
 /* flex */
-.flex-row {
+.flex-dir-row {
   display: flex;
   flex-direction: row;
 }
 
-.flex-column {
+.flex-dir-col {
   display: flex;
   flex-direction: column;
+}
+
+.flex-dir-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-dir-col-reverse {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .flex-item {
@@ -23,6 +33,10 @@
 .section-padding-lg {
   padding-top: 100px;
   padding-bottom: 150px;
+}
+
+.section-height {
+  height: 65vh;
 }
 
 /* buttons */
@@ -69,19 +83,23 @@
   line-height: 1.5;
 }
 
+.heading-1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
 .heading-2 {
   font-weight: 400;
   font-size: 2rem;
 }
 
-.sub-heading-2 {
-  font-weight: 400;
+.heading-3 {
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
-.heading-3 {
-  font-weight: 600;
-  font-size: 1.3rem;
+.heading-4 {
+  font-size: 1.1rem;
 }
 
 /* heading styles */

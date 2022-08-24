@@ -26,9 +26,13 @@ input {
   font-size: 0.8rem;
 }
 
+input:focus {
+  border: none;
+  outline: none;
+}
+
 /* navbar */
 #navbar {
-  align-items: center;
   justify-content: space-between;
   background-color: rgba(51, 51, 51, 0.25);
   height: 60px;
@@ -49,17 +53,18 @@ input {
 
 #navbar ul a {
   font-weight: 200;
-  padding: 10px;
 }
 
 #navbar ul a:hover {
   text-decoration: underline;
   text-decoration-color: #28a745;
-  text-underline-offset: 10px;
+  text-underline-offset: 1rem;
 }
 
 #navbar ul li {
-  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
 }
 
 /* showcase */
@@ -72,40 +77,35 @@ input {
   background-color: rgba(0, 0, 0, 0.775);
   height: 100vh;
   color: white;
-}
-
-.showcase-content {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   text-align: center;
 }
 
-#showcase .showcase-content h1 {
-  font-size: 3.5rem;
-  font-weight: 400;
-  padding-bottom: 10px;
+#showcase .heading-1 {
+  padding: 20px 50px;
 }
 
-#showcase .showcase-content .description {
-  font-size: 1.2rem;
+#showcase .heading-4 {
   font-weight: 300;
-  padding-bottom: 25px;
+  padding: 10px 50px 40px 50px;
 }
 
 /* about */
-#about .flex-container .flex-item {
-  text-align: center;
-  padding: 0 60px;
+#about .flex-item {
+  align-items: center;
+  padding: 0 50px;
 }
 
-.icon {
+#about {
+  text-align: center;
+}
+
+#about .icon {
   color: white;
   background-color: #28a745;
-  border-radius: 50%;
   padding: 25px;
+  border-radius: 50%;
 }
 
 #about .heading-3 {
@@ -118,26 +118,19 @@ input {
 }
 
 /* solutions */
-#solutions .flex-row {
-  height: 65vh;
+#solutions .flex-item {
+  max-width: 50%;
 }
 
-#solutions .col-1 img {
-  object-position: left center;
-}
-
-#solutions .col-2 {
-  background-color: #28a745;
-  color: white;
+#solutions .item-2 {
   align-items: flex-start;
   justify-content: center;
+  background-color: #28a745;
+  color: white;
+  padding: 5%;
 }
 
-#solutions .col-2 .text-content {
-  padding: 0 10%;
-}
-
-#solutions .sub-heading-2 {
+#solutions .heading-3 {
   margin-bottom: 30px;
 }
 
@@ -146,29 +139,28 @@ input {
 }
 
 /* cases */
-#cases .section-header {
+#cases header {
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-bottom: 70px;
 }
 
-#cases .section-header .sub-heading-2 {
+#cases header .heading-3 {
   margin-bottom: 30px;
 }
 
-#cases .section-header .description {
-  width: 60%;
+#cases header .description {
+  width: 50%;
 }
 
-/* fixes a white line after each image row */
 #cases .flex-grid .flex-item {
-  margin-top: -2px;
+  flex-wrap: wrap;
 }
 
 #cases img {
   height: 22vh;
-  padding: 2px;
+  padding: 1px;
 }
 
 #cases img:hover {
@@ -176,104 +168,80 @@ input {
 }
 
 /* blog */
-#blog .flex-row {
-  height: 65vh;
+#blog .flex-item {
+  max-width: 50%;
 }
 
-#blog .flex-container {
-  flex-direction: row-reverse;
-}
-
-#blog .col-2 {
+#blog .item-2 {
   background-color: #28a745;
   color: white;
   align-items: flex-start;
   justify-content: center;
+  padding: 5%;
 }
 
-#blog .col-2 .text-content {
-  padding: 0 10%;
-}
-
-#blog .sub-heading-2 {
+#blog .item-2 .heading-3 {
   margin-bottom: 30px;
 }
 
-#blog .description {
+#blog .item-2 .description {
   margin-bottom: 40px;
 }
 
 /* team */
 #team header {
   padding-bottom: 90px;
-}
-
-#team header .flex-container {
   align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
-#team header .flex-container .sub-heading-2 {
-  margin-top: 5px;
+#team header .heading-3 {
   margin-bottom: 40px;
-  padding: 0 10px;
 }
 
-#team header .flex-container .description {
-  margin-bottom: 10px;
+#team header .description {
   width: 65%;
 }
 
-#team #team-members.flex-container {
-  padding: 0 10%;
-}
-
-#team #team-members .heading-3 {
-  padding: 0 10px 10px 10px;
-}
-
-#team #team-members .description {
-  padding: 0 20%;
-}
-
-#team #team-members .team-member {
+#team #team-members .flex-item {
   align-items: center;
   text-align: center;
+  padding: 0 5%;
 }
 
 #team #team-members img {
-  width: 12rem;
+  width: 60%;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+#team #team-members .heading-3 {
+  padding: 10px;
 }
 
 /* callback */
-#callback .flex-row {
-  height: 65vh;
+#callback .flex-item {
+  max-width: 50%;
 }
 
-#callback .flex-container .col-2 {
+#callback .item-2 {
   background-color: #28a745;
   color: white;
   align-items: flex-start;
   justify-content: center;
+  padding: 5%;
 }
 
-#callback .flex-container .col-2 .text-content {
-  padding: 0 10%;
-}
-
-#callback .sub-heading-2 {
+#callback .heading-3 {
   margin-bottom: 30px;
 }
 
-#callback .description {
-  margin-bottom: 40px;
+#callback form {
+  width: 50%;
 }
 
 #callback form label {
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   display: block;
   font-weight: 300;
 }
@@ -286,15 +254,8 @@ input {
   width: 100%;
 }
 
-#callback form input:focus {
-  border: none;
-  outline: none;
-}
-
 #callback form .btn {
   margin-top: 1rem;
-  font-size: 0.9rem;
-  font-weight: 400;
 }
 
 /* footer */
@@ -302,129 +263,117 @@ footer {
   background-color: #2c2c2c;
   color: white;
   padding: 70px 0;
-}
-
-footer .flex-container {
   align-items: center;
   justify-content: center;
 }
 
-footer .flex-container .description {
-  padding-top: 5px;
-}
-
 footer a i {
-  margin: 10px;
+  padding: 10px;
   color: white;
 }
 
-/* responsive styling */
-
-/* tablet - normal*/
-@media screen and (max-width: 768px) {
-  /* about */
-  #about .flex-container {
-    flex-direction: column;
-  }
-
-  #about .flex-container .flex-item:not(:last-child) {
-    padding-bottom: 70px;
-  }
-
-  /* solutions */
-  #solutions .flex-row {
-    height: 100%;
-  }
-
-  #solutions .col-1 img {
-    object-position: center center;
-  }
-
-  #solutions .col-2 .text-content {
-    padding: 10% 10% 20% 10%;
-  }
-
-  /* blog */
-  #blog .flex-row {
-    height: 100%;
-  }
-
-  #blog .col-2 .text-content {
-    padding: 10% 10% 20% 10%;
-  }
-
-  /* team */
-  #team {
-    padding-bottom: 100px;
-  }
-
-  #team header {
-    padding-bottom: 70px;
-  }
-
-  #team #team-members.flex-container {
-    padding: 0 5%;
-  }
-  #team #team-members img {
-    width: 9rem;
-  }
-
-  #team header .flex-container .description {
-    width: 85%;
-  }
-
-  /* callback */
-  #callback .flex-row {
-    height: 100%;
-  }
-
-  #callback .flex-container .col-2 .text-content {
-    padding: 10% 10% 20% 10%;
+/* responsive */
+/* laptop */
+@media screen and (max-width: 1024px) {
+  #callback form {
+    width: 90%;
   }
 }
 
-/* navbar collapse */
-@media screen and (max-width: 690px) {
-  #navbar {
-    flex-direction: column;
+/* tablet */
+@media screen and (max-width: 768px) {
+  /* utilities */
+  .section-padding-sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .section-padding-lg {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .section-height {
     height: auto;
   }
 
-  #navbar ul a {
-    padding: 3px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  /* showcase */
-  #showcase .showcase-content .description {
-    padding: 20px 20px 40px 20px;
-  }
-
-  /* solutions */
-  #solutions .flex-container {
+  /* about */
+  #about {
     flex-direction: column;
   }
 
-  #solutions .flex-container .col-2 {
+  #about .flex-item:not(:last-child) {
+    padding-bottom: 40px;
+  }
+
+  /* cases */
+  #cases header .description {
+    width: 78%;
+  }
+
+  #cases img {
+    height: 12vh;
+  }
+
+  /* team */
+  #team header {
+    padding-bottom: 60px;
+  }
+
+  #team header .description {
+    width: 80%;
+  }
+
+  #team #team-members .flex-item {
+    max-width: 33.33%;
+  }
+
+  #team #team-members img {
+    width: 90%;
+  }
+}
+
+/* tablet - small */
+@media screen and (max-width: 595px) {
+  /* navbar */
+  #navbar {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  #navbar ul li {
+    padding-bottom: 20px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 535px) and (min-width: 220px) {
+  section.flex-dir-row,
+  section.flex-dir-row-reverse {
+    flex-direction: column !important;
+  }
+
+  section .flex-item {
+    max-width: 100% !important;
+  }
+
+  #solutions .flex-item,
+  #blog .flex-item,
+  #callback .flex-item {
+    align-items: center;
     text-align: center;
   }
 
-  #solutions .flex-container .col-2 .heading-2 {
-    padding: 0 1rem 1rem 1rem;
-  }
-
-  /* blog */
-  #blog .flex-container {
-    flex-direction: column-reverse;
-  }
-
-  #blog .flex-container .col-2 {
+  #callback form input {
     text-align: center;
   }
+}
 
-  #blog .flex-container .col-2 .heading-2 {
-    padding: 0 1rem 1rem 1rem;
+@media screen and (max-width: 515px) {
+  #solutions .item-2,
+  #blog .item-2 {
+    padding: 50px;
   }
 
   /* team */
@@ -432,91 +381,17 @@ footer a i {
     flex-direction: column;
   }
 
-  #team #team-members .team-member {
-    padding-bottom: 2rem;
+  #team #team-members .flex-item:not(:last-child) {
+    padding-bottom: 30px;
   }
 
-  /* callback */
-  #callback .flex-container {
-    flex-direction: column;
-  }
-
-  #callback .flex-container .col-2 {
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-  }
-
-  #callback .flex-container .col-2 .heading-2 {
-    padding: 0 1rem 1rem 1rem;
+  #team #team-members img {
+    width: 30%;
   }
 }
 
-/* mobile */
-@media screen and (max-width: 426px) {
-  /* utilities */
-  .section-padding-sm {
-    padding-top: 50px;
-    padding-bottom: 60px;
-  }
-
-  .section-padding-lg {
-    padding-top: 60px;
-    padding-bottom: 70px;
-  }
-
-  .btn {
-    font-size: 0.8rem;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .heading-3 {
-    font-size: 1rem;
-  }
-
-  /* showcase */
-  #showcase .showcase-content h1 {
-    font-size: 3rem;
-    padding: 0 20px;
-  }
-
-  #showcase .showcase-content .description {
-    font-size: 1rem;
-    padding: 20px 25px 40px 25px;
-  }
-
-  /* about */
-  #about .flex-container .flex-item {
-    padding: 0 50px;
-  }
-
-  #about .flex-container .flex-item:not(:last-child) {
-    padding-bottom: 40px;
-  }
-
-  /* team */
-  #team header {
-    padding-bottom: 50px;
-  }
-
-  #team header .flex-container .description {
-    width: 70%;
-  }
-
-  #team #team-members .description {
-    padding: 0 10%;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  #navbar ul a {
-    padding: 0;
-  }
-
+@media screen and (max-width: 376px) {
   #navbar ul li {
-    padding: 8px;
+    padding: 0 5px 20px 5px !important;
   }
 }
