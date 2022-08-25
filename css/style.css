@@ -272,6 +272,13 @@ footer a i {
   color: white;
 }
 
+/* blogs page */
+.blog-showcase {
+  background-image: url("../img/blogs-background.jpg") !important;
+  height: 60vh !important;
+  background-position: center center;
+}
+
 /* responsive */
 /* laptop */
 @media screen and (max-width: 1024px) {
