@@ -281,7 +281,20 @@ footer a i {
 }
 
 /* tablet */
-@media screen and (max-width: 768px), (orientation: landscape) {
+@media screen and (max-width: 970px) {
+  .section-height {
+    height: auto;
+  }
+}
+
+/* horizontal orientation */
+@media screen and (max-width: 970px) and (orientation: landscape) {
+  #showcase .heading-1 {
+    padding-top: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   /* utilities */
   .section-padding-sm {
     padding-top: 50px;
@@ -291,10 +304,6 @@ footer a i {
   .section-padding-lg {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-
-  .section-height {
-    height: auto;
   }
 
   /* about */
@@ -393,12 +402,5 @@ footer a i {
 @media screen and (max-width: 376px) {
   #navbar ul li {
     padding: 0 5px 20px 5px !important;
-  }
-}
-
-/* horizontal */
-@media screen and (max-width: 768px), (orientation: landscape) {
-  #showcase .heading-1 {
-    padding-top: 45px;
   }
 }
