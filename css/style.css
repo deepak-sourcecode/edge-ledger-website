@@ -279,6 +279,64 @@ footer a i {
   background-position: center center;
 }
 
+/* blog */
+.blog-showcase {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.775);
+  height: 50vh;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.blog-post .item-2 .heading-2,
+.blog-post .item-2 .heading-3 {
+  text-align: center;
+}
+
+#blog-1 .blog-showcase {
+  background-image: url("../img/office-employees.jpg") !important;
+}
+
+#blog-2 .blog-showcase {
+  background-image: url("../img/blog.jpg") !important;
+}
+
+#blog-3 .blog-showcase {
+  background-image: url("../img/blog-3.jpg") !important;
+}
+
+#blog-4 .blog-showcase {
+  background-image: url("../img/blog-4.jpg") !important;
+}
+
+.blog-post .item-2 {
+  align-items: center;
+  justify-content: center;
+  background-color: #28a745;
+  color: white;
+  padding: 5%;
+  margin-top: -5px;
+}
+
+.blog-post .item-2 .heading-3 {
+  padding-top: 10px;
+  padding-bottom: 3rem;
+}
+
+.blog-post .description {
+  text-align: justify;
+  text-align-last: center;
+  width: 90%;
+  padding: 1rem 5rem;
+  margin: auto;
+  line-height: 2.2;
+}
+
 /* responsive */
 /* laptop */
 @media screen and (max-width: 1024px) {
@@ -347,6 +405,12 @@ footer a i {
   #team #team-members img {
     width: 90%;
   }
+
+  /* blog post */
+  .blog-post .description {
+    width: 100%;
+    padding: 1rem 3rem;
+  }
 }
 
 /* tablet - small */
@@ -404,10 +468,22 @@ footer a i {
   #team #team-members img {
     width: 30%;
   }
+
+  /* blog post */
+  .blog-post .description {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
 }
 
 @media screen and (max-width: 376px) {
   #navbar ul li {
     padding: 0 5px 20px 5px !important;
+  }
+
+  /* blog post */
+  .blog-post .description {
+    width: 100%;
+    padding: 1rem 1rem;
   }
 }
